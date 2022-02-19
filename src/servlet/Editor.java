@@ -18,11 +18,10 @@ public class Editor extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		System.out.println("hh");
-		this.getServletContext().getRequestDispatcher( "/WEB-INF/editor.html" ).forward( request, response );
+		this.getServletContext().getRequestDispatcher( "/WEB-INF/editor.jsp" ).forward( request, response );
 	}
 
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {	
 		
 	}
 
